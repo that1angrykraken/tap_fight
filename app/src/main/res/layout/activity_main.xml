@@ -36,7 +36,7 @@
             android:id="@+id/txtBanner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Tap to Start"
+            android:text="@string/tap_to_start"
             android:textSize="28sp"
             android:textAlignment="center"
             android:textColor="#fff"

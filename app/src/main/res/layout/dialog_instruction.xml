@@ -17,7 +17,7 @@
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="INSTRUCTION"
+				android:text="@string/instruction_dialog_title"
 				android:textColor="@color/black"
 				android:textSize="22sp"
 				android:textStyle="bold"/>
@@ -33,14 +33,14 @@
 				android:id="@+id/checkBox"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Don't show this again."
+				android:text="@string/dont_show_dialog"
 				android:textColor="@color/black"/>
 			<Button
 				android:id="@+id/btnClose"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:textAllCaps="false"
-				android:text="I understand!"
+				android:text="@string/close_dialog"
 				android:textSize="16sp"
 				style="@style/Widget.Material3.Button.OutlinedButton"
 				/>

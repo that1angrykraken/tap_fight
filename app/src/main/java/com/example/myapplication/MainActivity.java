@@ -5,17 +5,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.PersistableBundle;
-import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.WindowMetrics;
-import android.widget.CompoundButton;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.myapplication.databinding.ActivityMainBinding;
@@ -68,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     void startPreparingPhase(){
-        binding.txtBanner.setText("Tap to Start");
+        binding.txtBanner.setText(getString(R.string.tap_to_start));
         lp.height = scrHeight/2;
         binding.layoutBlock2.setLayoutParams(lp);
         tapCounter1 = tapCounter2 = 0;
@@ -79,8 +72,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     void showWinner(){
         binding.txtBanner.setVisibility(View.VISIBLE);
-        String winner = tapCounter1 > tapCounter2 ? "P1 WON" : "P2 WON";
-        binding.txtBanner.setText(winner + "\n" + "Counter: " + Math.max(tapCounter1, tapCounter2));
+        String winner = tapCounter1 > tapCounter2 ? "P1" : "P2";
+        binding.txtBanner.setText(winner + getString(R.string.winner_counter) + Math.max(tapCounter1, tapCounter2));
     }
 
     void increase(Object obj){
@@ -122,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             showWinner();
             new Handler(Looper.getMainLooper()).postDelayed(() -> {
                 preparingPhase = true;
-                binding.txtBanner.setText("Tap to continue..");
+                binding.txtBanner.setText(R.string.tap_to_continue);
             }, interval);
         }
     }
