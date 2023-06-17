@@ -21,7 +21,7 @@
             <LinearLayout
                 android:id="@+id/layout_block2"
                 android:layout_width="match_parent"
-                android:layout_height="960px"
+                android:layout_height="365dp"
                 android:background="#2B1717"
                 android:clickable="true"
                 android:contextClickable="true"
