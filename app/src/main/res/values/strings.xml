@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+	<string name="instruction_text">This is a 2 players game. Each player need to tap on the top or bottom side of the screen with different color. Once your color dominates the other, you win the game.</string>
+</resources>
