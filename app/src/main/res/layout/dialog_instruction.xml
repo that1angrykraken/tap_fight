@@ -2,36 +2,48 @@
 <layout>
 	<LinearLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="340dp"
-		android:orientation="vertical"
-		android:gravity="center_horizontal"
+		android:layout_width="300dp"
 		android:layout_height="wrap_content"
-		android:background="@drawable/rounded_bg"
-		android:paddingVertical="15dp"
+		android:background="@android:color/transparent"
 	>
-		<TextView
-			android:layout_width="wrap_content"
+		<LinearLayout
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="INSTRUCTION"
-			android:textColor="@color/black"
-			android:textSize="22sp"
-			android:textStyle="bold"/>
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="@string/instruction_text"
-			android:textAlignment="center"
-			android:textColor="@color/black"
-			android:textSize="17sp"
-			android:padding="15dp"/>
-		<Button
-			android:id="@+id/btnClose"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textAllCaps="false"
-			android:text="Understandable, have a nice day!"
-			android:textSize="16sp"
-			style="@style/Widget.Material3.Button.OutlinedButton"
-		/>
+			android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:background="@drawable/rounded_bg"
+			android:padding="15dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="INSTRUCTION"
+				android:textColor="@color/black"
+				android:textSize="22sp"
+				android:textStyle="bold"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/instruction_text"
+				android:textAlignment="center"
+				android:textColor="@color/black"
+				android:textSize="17sp"
+				android:padding="15dp"/>
+			<CheckBox
+				android:id="@+id/checkBox"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Don't show this again."
+				android:textColor="@color/black"/>
+			<Button
+				android:id="@+id/btnClose"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAllCaps="false"
+				android:text="I understand!"
+				android:textSize="16sp"
+				style="@style/Widget.Material3.Button.OutlinedButton"
+				/>
+		</LinearLayout>
 	</LinearLayout>
 </layout>
