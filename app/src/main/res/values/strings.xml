@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Tap Fight</string>
-	<string name="instruction_text">This is a 2 players game. Each player need to tap on the top or bottom side of the screen with different color. Once your color dominates the other, you win the game.</string>
+	<string name="instruction_text">This is a 2 players game. Each player repeatedly tap on the top or bottom side of the screen with different color. Once your color dominates the other, you win the game.</string>
     <string name="dont_show_dialog">Don\'t show this again.</string>
     <string name="close_dialog">I understand!</string>
     <string name="instruction_dialog_title">INSTRUCTION</string>

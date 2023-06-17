@@ -3,6 +3,15 @@ plugins {
 }
 
 android {
+    signingConfigs{
+        release {
+            storeFile file("E:\\keystores\\chocolate1\\chocolate1.jks")
+            storePassword "Mxta@563900"
+            keyAlias "key0"
+            keyPassword "Mxta5639"
+        }
+    }
+
     namespace 'seaMonster.kraken.chocolate1'
     compileSdk 34
 
@@ -20,6 +29,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
