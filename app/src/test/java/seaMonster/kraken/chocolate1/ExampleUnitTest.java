@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package seaMonster.kraken.chocolate1;
 
 import org.junit.Test;
 

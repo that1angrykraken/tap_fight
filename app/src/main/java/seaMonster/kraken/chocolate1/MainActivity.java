@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package seaMonster.kraken.chocolate1;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -11,8 +11,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import com.example.myapplication.databinding.ActivityMainBinding;
-import com.example.myapplication.databinding.DialogInstructionBinding;
+import seaMonster.kraken.chocolate1.databinding.ActivityMainBinding;
+import seaMonster.kraken.chocolate1.databinding.DialogInstructionBinding;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

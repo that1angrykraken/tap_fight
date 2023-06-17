@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package seaMonster.kraken.chocolate1;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;

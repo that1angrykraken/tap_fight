@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace 'com.example.myapplication'
-    compileSdk 33
+    namespace 'seaMonster.kraken.chocolate1'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.myapplication"
+        applicationId "seaMonster.kraken.chocolate1"
         minSdk 28
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
